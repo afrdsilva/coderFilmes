@@ -1,41 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End of Google Fonts -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="./styles/cadastro.css" />
     <title>Cadastre-se</title>
-</head>
+  </head>
 
-<header>
-
-</header>
-
-<body>
-    <img src="./imagens/fundo - login.png" alt="fundo_da_pagina" class="imagem_fundo">
-    <h1 class="Cadastre-se">Cadastre-se</h1>
-    <div class="formulario_cadastro">
-    <form action="/action_page.php" method="get" class="formCadastro">
-        <label for="Fnome"> Informe Seu nome </label><br>
-        <input type="text" id="Fnome" name="Fname"><br>
-        <label for="Fcontato">Informe seu Contato </label><br>
-        <input type="tel" id="Fcontato" name="Fcontato"><br>
-        <label for="Fmail">Digite seu E-mail</label><br>
-        <input type="email" id="Fmaim" name="Fmail"><br>
-        <label for="Fpassword"> Informe uma Senha</label><br>
-        <input type="password" id="Fpassword"><br><br>
-        <div>
-        <button type="button"  class="botaoCadastro">CONCLUIR</button>
+  <body>
+    <header class="flex-header">
+      <div class="interface">
+        <div class="logo">
+          <nav>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="./img/logo-principal.png" alt="Logo CoderFilmes"
+                /></a>
+                <a href="#">Filmes</a>
+                <a href="#">Séries</a>
+                <a href="#">Lançamentos</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-      
-    </form>
+      </div>
+    </header>
+    <img
+      src="./img/fundo-login.png"
+      alt="Imagem de Fundo"
+      class="imagem_fundo"
+    />
+    <h1 class="cadastre-se">Cadastre-se</h1>
+    <div class="formulario_cadastro">
+      <form action="/action_page.php" method="get" class="formCadastro">
+        <label for="Fnome"> Informe Seu nome </label><br />
+        <input type="text" id="Fnome" name="Fname" /><br />
+        <label for="Fcontato">Informe seu Contato </label><br />
+        <input type="tel" id="Fcontato" name="Fcontato" /><br />
+        <label for="Fmail">Digite seu E-mail</label><br />
+        <input type="email" id="Fmaim" name="Fmail" /><br />
+        <label for="Fpassword"> Informe uma Senha</label><br />
+        <input type="password" id="Fpassword" /><br /><br />
+        <div>
+          <button type="button" class="btn_cadastro">CONCLUIR</button>
+        </div>
+      </form>
     </div>
-</body>
 
-<footer>
-
-</footer>
-</body>
-
+    <footer>
+      <div class="img_footer">
+        <img
+          src="./img/logo-principal.png"
+          alt="Logo
+        CoderFilmes"
+        />
+      </div>
+    </footer>
+  </body>
 </html>
