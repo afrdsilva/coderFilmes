@@ -8,15 +8,7 @@ CoderFilmes
 
 ## 💻 Sobre:
 
-Este projeto tem o foco de criar um site que tem a aparência semelhante ao site da SpaceX("https://www.spacex.com"), contendo animações, tabelas e imagens de fundo. Tendo também como objetivo, treinar posicionamento (flexbox) e responsividade com o CSS, a organização das pastas de estilo com SASS, a utilização das ferramentas fornecidas pelo bootstrap como: carrossel, navbar, posicionamento e etc.
-
 ## 📝 Composição do Site:
-
-A primeira página decorre entre cinco sessões que apresentam uma visão geral sobre as missões e retorno de astronautas a terra.
-
-Falcon 9. Essa página tem o intuito de apresentar o primeiro foguete de classe orbital reutilizável, ainda na página temos dois carrosséis, o primeiro apresenta detalhes sobre as partes que compõem o Falcon 9,o segundo apresenta imagens relacionadas.
-
-Human Spaceflight é a última página a ser criada,feita com o propósito de demonstrar algumas missões propostas pela SpaceX.
 
 ## 🏁 Instalação:
 
