@@ -11,47 +11,50 @@
       rel="stylesheet"
     />
     <!-- End of Google Fonts -->
-    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
     <title>Login-CoderFilmes</title>
   </head>
   <body>
-    <header class="container">
-      <nav class="navbar">
-        <div class="nav-logo">
+    <!-- Cabeçalho -->
+    <header>
+      <div class="interface">
+        <a href="./home.html">
           <img src="./img/logo-principal.png" alt="Logo" />
-          <div class="nav-btn">
-            <button class="btn-language" type="button">
-              <select name="language" id="language">
-                <option value="Português">Português</option>
-                <option value="English">English</option>
-              </select>
-            </button>
-          </div>
+        </a>
+        <div lass="btn-language">
+          <button>
+            <select name="language" id="language">
+              <option value="Português">Português</option>
+              <option value="English">English</option>
+            </select>
+          </button>
         </div>
-      </nav>
+      </div>
     </header>
+    <!-- Section Main_Principal -->
     <section class="main">
       <img src="./img/logo-principal.png" alt="Logo" />
       <h1>Bem vindo(a).</h1>
       <h3>Acesse sua conta e assista os melhores filmes!</h3>
-      <input type="e-mail" placeholder="E-mail" />
+      <input type="email" placeholder="E-mail" required />
       <br />
       <input type="password" placeholder="Senha" />
       <div class="btn-login">
         <button type="button">Vamos lá!</button>
       </div>
-      <footer>
-        <div class="logo-footer">
-          <img src="./img/logo-principal.png" alt="Logo" />
-        </div>
-        <div>
-          <a href="https://github.com/afrdsilva/coderFilmes">
-            <img src="./img/github-icon.png" alt="GitHub"
-          /></a>
-          <a href="#"><img src="./img/instagram-icon.png" alt="Instagram" /></a>
-          <a href="#"><img src="./img/linkedin-icon.png" alt="LinkedIn" /></a>
-        </div>
-      </footer>
     </section>
+    <!-- Footer-->
+    <footer>
+      <div class="logo-footer">
+        <img src="./img/logo-principal.png" alt="Logo" />
+      </div>
+      <div>
+        <a href="https://github.com/afrdsilva/coderFilmes">
+          <img src="./img/github-icon.png" alt="GitHub"
+        /></a>
+        <a href="#"><img src="./img/instagram-icon.png" alt="Instagram" /></a>
+        <a href="#"><img src="./img/linkedin-icon.png" alt="LinkedIn" /></a>
+      </div>
+    </footer>
   </body>
 </html>
