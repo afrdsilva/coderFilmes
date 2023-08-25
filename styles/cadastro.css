@@ -1,71 +1,66 @@
+
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "Jost", sans-serif;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+ 
+    @font-face {
+        font-family: "Jost-VariebleFont_wght";
+        src: url("./fonte_texto/jost/Jost-VariableFont_wght.ttf");
+    
+    }
+
+body{
+    background-color: #000000;
+    font-family: Jost-VariebleFont_wght;
+}
+.formulario_cadastro{
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    font-size: 15px;
+}
+.logo_CoderFilmes{
+    position: absolute;
+    top: 250px;
+    left: 480px;
+    font-weight: bold;
+    font-size: 60px;
+    width: 400px;
+    height: 150px;
+}
+.Cadastre-se{
+    color: white;
+    position: absolute;
+    top: 400px;
+    left: 510px;
+    font-weight: bold;
+    font-size: 60px;
+}
+.botaoCadastro{
+    width: 140px;
+    position: absolute;
+    left: 130px;
+    margin: 0 auto;
+    background-color: #D62D30;
+    color:#D9D9D9;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20px;
+
 }
 
-body {
-  background-color: #000;
-  height: 100vh;
+form input {
+    background-color:#D9D9D9;  
+    opacity: 20%;
+    color:#000000;
+    font-weight: bold;
+    border: groove;
+    border-color: #000000;
+    width: 350px;
+    right: 150px;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.interface a {
-  color: #ffffff;
-  text-decoration: none;
-  margin-right: 20px;
-}
-
-.interface img {
-  max-width: 200px;
-}
-
-.imagem_fundo {
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-}
-
-.formulario_cadastro {
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  position: absolute;
-  top: 500px;
-  left: 500px;
-}
-
-.cadastre-se {
-  color: white;
-  position: absolute;
-  top: 450px;
-  left: 500px;
-}
-.btn_cadastro {
-  width: 200px;
-  margin: 0 auto;
-  background-color: red;
-  color: white;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-input {
-  background-color: transparent;
-  opacity: 80%;
-  color: white;
-  border: solid;
-  border-color: #000000;
-  width: 350px;
-  right: 150px;
-}
-
-.img_footer div {
-  max-width: 100px;
-}
