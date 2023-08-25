@@ -3,34 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- End of Google Fonts -->
     <link rel="stylesheet" href="./styles/login.css" />
     <title>Login-CoderFilmes</title>
   </head>
   <body>
     <!-- Cabeçalho -->
     <header>
-      <div class="interface">
-        <a href="./home.html">
-          <img src="./img/logo-principal.png" alt="Logo" />
-        </a>
-        <div lass="btn-language">
-          <button>
-            <select name="language" id="language">
-              <option value="Português">Português</option>
-              <option value="English">English</option>
-            </select>
+      <a href="catalogo.html">
+          <img src="./img/logo-header.png" alt="Logo Coderfilmes que direciona para o catálogo">
+      </a>
+      <button> Catalogos</button>
+      <button> Filmes</button>
+      <button> Series</button>
+      <button> Lançamentos</button>
+      <input type="search" name="search" placeholder="Busca"/>
+          <button type="submit" name="busca">
+              <img src="./img/icone_header_busca.png" alt="Botão buscar">
           </button>
-        </div>
-      </div>
-    </header>
+          <button>
+              <img src="./img/icone_header_notificacao.png" alt="Notificações do seu perfil">
+          </button>
+          <button>
+              <img src="./img/icone_header_idioma.png" alt="Mudar idioma da sua página">
+          </button>
+      <select name="Idioma">
+          <option value="pt-BR">Português</option>
+          <option value="en">Inglês</option>
+      </select>
+  </header>
     <!-- Section Main_Principal -->
     <section class="main">
       <img src="./img/logo-principal.png" alt="Logo" />

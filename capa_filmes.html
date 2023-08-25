@@ -11,21 +11,27 @@
 <body>
     <main >
         <header>
-            <div class="interface">
-                <img class="img-container1">
-              <img src="img/logo-principal.png" alt="Logo">
-            </img>
-              <button> Catalogos</button>
-              <button> Filmes</button>
-              <button> Series</button>
-              <button> Lançamentos</button>
-              <img class="img-container2">
-              <img src="img/barra-de-pesquisa.png" alt="Busca">
-            </img>
-            <img class="img-container3">
-              <img src="img/notificacao.png" alt="notificacao">
-            </img>
-            </div>
+            <a href="catalogo.html">
+                <img src="./img/logo-header.png" alt="Logo Coderfilmes que direciona para o catálogo">
+            </a>
+            <button> Catalogos</button>
+            <button> Filmes</button>
+            <button> Series</button>
+            <button> Lançamentos</button>
+            <input type="search" name="search" placeholder="Busca"/>
+                <button type="submit" name="busca">
+                    <img src="./img/icone_header_busca.png" alt="Botão buscar">
+                </button>
+                <button>
+                    <img src="./img/icone_header_notificacao.png" alt="Notificações do seu perfil">
+                </button>
+                <button>
+                    <img src="./img/icone_header_idioma.png" alt="Mudar idioma da sua página">
+                </button>
+            <select name="Idioma">
+                <option value="pt-BR">Português</option>
+                <option value="en">Inglês</option>
+            </select>
         </header>
         <!-- Seção da capa com as principais informações do filme -->
         <section id="sinopse">

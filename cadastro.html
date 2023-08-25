@@ -4,53 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="./styles/cadastro.css">
     <title>Cadastre-se</title>
-  </head>
+</head>
 
-  <header>
-    <div class="Logo_header">
-        <a href="#"><img src="./imagens/Logo-Principal.png" alt="Logo_header" width="200px"> </a>
-        <nav>
-            <li>
-                <a href="#"> Filmes</a>
-                <a href="#">Series</a>
-                <a href="#">Lançamentos |</a>
-            </li>
-        </nav>
-    </div>
-    
-</header>
+
 
 <body>
+    <header>
+        <a href="catalogo.html">
+            <img src="./img/logo-header.png" alt="Logo Coderfilmes que direciona para o catálogo">
+        </a>
+        <button> Catalogos</button>
+        <button> Filmes</button>
+        <button> Series</button>
+        <button> Lançamentos</button>
+        <input type="search" name="search" placeholder="Busca"/>
+            <button type="submit" name="busca">
+                <img src="./img/icone_header_busca.png" alt="Botão buscar">
+            </button>
+            <button>
+                <img src="./img/icone_header_notificacao.png" alt="Notificações do seu perfil">
+            </button>
+            <button>
+                <img src="./img/icone_header_idioma.png" alt="Mudar idioma da sua página">
+            </button>
+        <select name="Idioma">
+            <option value="pt-BR">Português</option>
+            <option value="en">Inglês</option>
+        </select>
+    </header>
     <img src="./img/fundo-login.png" alt="fundo_da_pagina" class="imagem_fundo">
     <h1 class="Cadastre-se">Cadastre-se</h1>
     <div class="formulario_cadastro">
-    <form action="/action_page.php" method="get" class="formCadastro">
-        <label for="Fnome"> Informe Seu nome </label><br>
-        <input type="text" id="Fnome" name="Fname"><br>
-        <label for="Fcontato">Informe seu Contato </label><br>
-        <input type="tel" id="Fcontato" name="Fcontato"><br>
-        <label for="Fmail">Digite seu E-mail</label><br>
-        <input type="email" id="Fmaim" name="Fmail"><br>
-        <label for="Fpassword"> Informe uma Senha</label><br>
-        <input type="password" id="Fpassword"><br><br>
-        <div>
-        <button type="button"  class="botaoCadastro">CONCLUIR</button>
-        </div>
-      
-    </form>
+        <form action="/action_page.php" method="get" class="formCadastro">
+            <label for="Fnome"> Informe Seu nome </label><br>
+            <input type="text" id="Fnome" name="Fname"><br>
+            <label for="Fcontato">Informe seu Contato </label><br>
+            <input type="tel" id="Fcontato" name="Fcontato"><br>
+            <label for="Fmail">Digite seu E-mail</label><br>
+            <input type="email" id="Fmaim" name="Fmail"><br>
+            <label for="Fmail">Confirme seu E-mail</label><br>
+            <input type="email" id="Fmaim" name="Fmail"><br>
+            <label for="Fpassword"> Informe uma Senha</label><br>
+            <input type="password" id="Fpassword"><br><br>
+            <div>
+                <button type="button" class="botaoCadastro">CONCLUIR</button>
+            </div>
+
+        </form>
     </div>
 </body>
 
-    <footer>
-      <div class="img_footer">
-        <img
-          src="./img/logo-principal.png"
-          alt="Logo
-        CoderFilmes"
-        />
-      </div>
-    </footer>
-  </body>
+
+<footer>
+    <a href="https://github.com/afrdsilva/coderFilmes">
+        <img src="./img/github-icon.png" alt="GitHub" /></a>
+    <a href="#"><img src="./img/instagram-icon.png" alt="Instagram" /></a>
+    <a href="#"><img src="./img/linkedin-icon.png" alt="LinkedIn" /></a>
+</footer>
+
+</body>
+
 </html>
