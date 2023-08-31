@@ -3,54 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./css/index.css" />
     <title>CoderFilmes</title>
   </head>
   <body>
     <!-- Cabeçalho -->
-    <header>
-      <div class="interface">
-        <a href="./index.html">
-          <img src="./assets/icons/logo-header.png" alt="Logo" />
+    <div class="container">
+      <nav class="navbar">
+        <img
+          id="logo"
+          src="./assets/icons/logo-principal.png"
+          alt="Logo Code"
+        />
+        <select id="select-languages" name="Idioma">
+          <option value="pt-br">Português</option>
+          <option value="en">Inglês</option>
+        </select>
+        <a href="./assets/pages/login.html"
+          ><button id="btn-login">Login</button>
         </a>
-        <div class="btn-language"></div>
-        <div class="btn-login">
-          <a href="./login.html">
-            <button>Login</button>
-          </a>
-        </div>
-        <button type="submit"></button>
-      </div>
+      </nav>
 
-      <select name="Idioma">
-        <option value="pt-BR">Português</option>
-        <option value="en">Inglês</option>
-      </select>
-    </header>
-    <!-- Section Main_Principal -->
-    <section class="main">
-      <img src="./img/logo-principal.png" alt="Logo" />
-      <h1>Bem vindo(a).</h1>
-      <h3>
-        Aqui você encontra todo sobre filmes, séries e pessoas. Explore já!
-      </h3>
-      <h4>
-        Quer conhecer? Informe seu e-mail para criar sua conta. Aproveite o
-        teste grátis por 01 mês.
-      </h4>
-      <input type="email" placeholder="E-mail" required />
-      <div class="btns-cadastrar-testar">
-        <button type="button">Cadastra-se</button>
-        <button type="button">Testar</button>
-      </div>
-    </section>
+      <!-- Conteúdo Principal -->
+      <main class="story-card">
+        <h1 class="story-card-title">Bem vindo(a).</h1>
+        <h3 class="story-card-subtitle">
+          Aqui você encontra tudo sobre filmes, séries e pessoas. Explore já!
+        </h3>
+        <form class="form-container">
+          <h4 class="form-invitation">
+            Quer conhecer? Informe seu e-mail para criar sua conta. Aproveite o
+            teste grátis por 01 mês.
+          </h4>
+          <div class="form-container-email">
+            <input
+              id="input-email"
+              type="email"
+              placeholder="E-mail"
+              required
+            />
+          </div>
+          <div class="buttons">
+            <a href="/assets/pages/cadastro.html"
+              ><button class="btn" type="button">Cadastre-se</button></a
+            >
+            <button class="btn" type="button">Testar</button>
+          </div>
+        </form>
+      </main>
+    </div>
     <!-- Footer-->
     <footer>
-      <a href="https://github.com/afrdsilva/coderFilmes">
-        <img src="./img/github-icon.png" alt="GitHub"
-      /></a>
-      <a href="#"><img src="./img/instagram-icon.png" alt="Instagram" /></a>
-      <a href="#"><img src="./img/linkedin-icon.png" alt="LinkedIn" /></a>
+      <img src="./assets/icons/logo-principal.png" alt="Logo CoderFilmes" />
+      <p>CoderFilmes &copy; 2023</p>
     </footer>
   </body>
 </html>

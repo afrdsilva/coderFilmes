@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/login.css" />
+    <title>Login-CoderFilmes</title>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <div class="container">
+      <nav class="navbar">
+        <img id="logo" src="/assets/icons/logo-principal.png" alt="Logo Code" />
+        <select id="select-languages" name="Idioma">
+          <option value="pt-br">Português</option>
+          <option value="en">Inglês</option>
+        </select>
+      </nav>
+
+      <!-- Conteúdo Principal -->
+      <main class="story-card">
+        <h1 class="story-card-title">Bem vindo(a).</h1>
+        <h3 class="story-card-subtitle">
+          Acesse sua conta e assista os melhores filmes, séries e muito mais!
+        </h3>
+        <form class="form-container">
+          <div class="form-container-email">
+            <input
+              id="input-email"
+              type="email"
+              placeholder="E-mail"
+              required
+            />
+          </div>
+          <div class="form-container-password">
+            <input
+              id="input-password"
+              type="password"
+              placeholder="Senha"
+              required
+            />
+          </div>
+          <div class="button">
+            <button class="btn" type="button">Acesse sua conta!</button>
+          </div>
+        </form>
+      </main>
+    </div>
+    <!-- Footer-->
+    <footer>
+      <img src="/assets/icons/logo-principal.png" alt="Logo CoderFilmes" />
+      <p>CoderFilmes &copy; 2023</p>
+    </footer>
+  </body>
+</html>
