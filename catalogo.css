@@ -1,0 +1,55 @@
+
+      
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #141414;
+          
+        }
+        .filme {
+          border: 1px solid #141414;
+          padding: 10px;
+          margin: 10px;
+          display: inline-block;
+          width: 200px;
+          background-color: #141414;
+        }
+        .filme img {
+          max-width: 100%;
+          height: auto;
+        }
+        
+        .capa img{
+          display: flex;
+          flex-wrap: nowrap;
+          width: 1499px;
+          height: 100;
+        }
+       
+        h1 {
+            color: #FFFFFF;
+        }
+        h2 {
+            color: #FFFFFF;
+        }
+        
+        header {
+            width: 1363px;
+            height: 47;
+
+        }
+        .interface {
+            
+            height: auto;
+        }
+        .img-container1 {
+           text-align: left;
+        }
+        .img-container2 {
+           text-align: right;
+           color: #FFFFFF;
+        }
+        .img-container3 {
+           text-align: right;
+           color: #FFFFFF;
+        }
+      
