@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(capa_barbie2023_sinopse.jpg);
+    background-image: url(../assets/images/capa_barbie2023_sinopse.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
