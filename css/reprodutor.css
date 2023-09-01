@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    overflow: hidden;
+    background-color: black;
+}
+  
+.voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.fechar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+iframe {
+    width: 90vw;
+    height: 90vh;
+}
+
+footer {
+    position: fixed;
+    bottom: 22px;
+    right: 68px;
+    left: 68px;
+}
+
+.footer__botao {
+    display: inline;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 46px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 109px;
+}
+
+#footer__botao--ultimo {
+    margin-right: 0;
+}
