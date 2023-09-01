@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(capa_barbie2023_sinopse.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.menu{
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.menu__botao {
+    display: inline;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 46px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+#assitir {
+    position: fixed;
+    top: 10px;
+    right: 120px;
+    padding: 10px 120px 10px 120px;
+}
+
+#genero {
+    position: relative;
+    left: 120px;
+    bottom: 100px;
+    margin-right: 5px;
+    font-weight: normal;
+    font-size: 12px;
+    border: 1px solid;
+}
+
+.menu__botao:hover {
+  background-color: #40b4d9;
+}
+
+#assitir:hover {
+    background-color: rgb(246 180 206);
+}
+
+#sinopse__geral {
+    width: 300px;
+    height: 300px;
+    margin-top: 300px;
+    margin-left: 120px;
+}
+
+h1 {
+    color: white;
+    font-size: 75px;
+    font-weight: bold; 
+}
+
+h3 {
+    color: white;
+    font-size: 16px;
+}
