@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,8 +15,22 @@ body {
     overflow: hidden;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 60px auto;
+    grid-template-areas:
+    "header"
+    "conteudo";
+}
+
+.menuMobile {
+    display: none;
+}
+
 .menu{
-    margin-top: 20px;
+    grid-area: header;
+    margin-top: 30px;
     margin-left: 120px;
 }
 
@@ -52,14 +67,15 @@ body {
 }
 
 .menu__botao:hover {
-  background-color: #40b4d9;
+  background-color: rgb(246 180 206);
 }
 
 #assitir:hover {
     background-color: rgb(246 180 206);
 }
 
-#sinopse__geral {
+.sinopse {
+    grid-area: conteudo;
     width: 300px;
     height: 300px;
     margin-top: 300px;
@@ -75,4 +91,154 @@ h1 {
 h3 {
     color: white;
     font-size: 16px;
+}
+
+/*----------CELULARES----------*/
+
+@media screen and (max-width: 768px) {
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 110px auto;
+        grid-template-areas:
+        "header--mobile"
+        "conteudo";
+    }
+
+    body {
+        background-image: url(../assets/images/capa_barbie2023_sinopse.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 52%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menuMobile {
+        list-style: none;
+        grid-area: header--mobile;
+        display:grid;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
+
+    #menuMobile__botao {
+        width: 120px;
+        padding: 10px 0 10px 0;
+        background-color: rgba(246, 180, 206, .75);
+        border: 2px solid;
+        border-radius: 36px;
+        margin-bottom: 5px;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        transition: background-color 0.3s ease;
+        margin-right: 10px;
+    }
+
+    #menuMobile__botao:focus {
+        background-color: rgb(246 180 206);
+    }
+
+    .sinopse {
+        grid-area: conteudo;
+        width: 300px;
+        height: 300px;
+        margin-top: 300px;
+        margin-left: 10px;
+    }
+
+    #genero {
+        position: relative;
+        left: 10px;
+        margin-right: 5px;
+        font-weight: normal;
+        font-size: 12px;
+        background-color: rgba(246, 180, 206, .75)
+        border: 1px solid;
+    }
+}
+
+/*----------TABLETS----------*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 110px auto 46px;
+        grid-template-areas:
+        "header--mobile"
+        "conteudo"
+        "footer";
+    }
+
+    body {
+        background-image: url(../assets/images/capa_barbie2023_sinopse.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 48%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menuMobile {
+        list-style: none;
+        grid-area: header--mobile;
+        display:inline-block;
+        margin: 20px 0 0 20px;
+    }
+
+    #menuMobile__botao {
+        display: inline;
+        padding: 10px 20px;
+        background-color: transparent;
+        border: 2px solid;
+        border-radius: 46px;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-right: 10px;
+    }
+
+    #menuMobile__botao:focus {
+        background-color: rgb(246 180 206);
+    }
+
+    .sinopse {
+        grid-area: conteudo;
+        width: 300px;
+        height: 200px;
+        margin-top: 500px;
+        margin-left: 20px;
+    }
+
+    .sinopse__genero{
+        grid-area: footer;
+    }
+
+    #genero {
+        position: relative;
+        top: 10px;
+        left: 10px;
+        margin-right: 5px;
+        font-weight: normal;
+        font-size: 12px;
+        border: 1px solid;
+    }
 }
