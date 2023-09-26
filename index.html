@@ -14,13 +14,9 @@
   </head>
   <body>
     <!-- Cabeçalho -->
-    <div class="container">
-      <nav class="navbar">
-        <img
-          id="logo"
-          src="./assets/icons/logo-principal.png"
-          alt="Logo Code"
-        />
+    <header>
+      <img src="./assets/icons/logo-principal.png" alt="Logo Code" />
+      <div>
         <select id="select-languages" name="Idioma">
           <option value="pt-br">Português</option>
           <option value="en">Inglês</option>
@@ -28,38 +24,33 @@
         <a href="./assets/pages/login.html"
           ><button id="btn-login">Login</button>
         </a>
-      </nav>
+      </div>
+    </header>
+    <!-- Conteúdo Principal -->
+    <main>
+      <h1>Bem vindo(a).</h1>
+      <h3>
+        Aqui você encontra tudo sobre filmes, séries e pessoas. Explore já!
+      </h3>
+      <form class="form-container">
+        <h4 class="form-invitation">
+          Quer conhecer? Informe seu e-mail para criar sua conta. Aproveite o
+          teste grátis por 01 mês.
+        </h4>
+        <div class="form-container-email">
+          <input id="input-email" type="email" placeholder="E-mail" required />
+        </div>
+        <div class="buttons">
+          <a href="./assets/pages/cadastro.html"
+            ><button class="btn" type="button">Cadastre-se</button>
+          </a>
+          <a href="./assets/pages/catalogo.html">
+            <button class="btn" type="button">Testar</button>
+          </a>
+        </div>
+      </form>
+    </main>
 
-      <!-- Conteúdo Principal -->
-      <main class="story-card">
-        <h1 class="story-card-title">Bem vindo(a).</h1>
-        <h3 class="story-card-subtitle">
-          Aqui você encontra tudo sobre filmes, séries e pessoas. Explore já!
-        </h3>
-        <form class="form-container">
-          <h4 class="form-invitation">
-            Quer conhecer? Informe seu e-mail para criar sua conta. Aproveite o
-            teste grátis por 01 mês.
-          </h4>
-          <div class="form-container-email">
-            <input
-              id="input-email"
-              type="email"
-              placeholder="E-mail"
-              required
-            />
-          </div>
-          <div class="buttons">
-            <a href="./assets/pages/cadastro.html"
-              ><button class="btn" type="button">Cadastre-se</button>
-            </a>
-            <a href="./assets/pages/catalogo.html">
-              <button class="btn" type="button">Testar</button>
-            </a>
-          </div>
-        </form>
-      </main>
-    </div>
     <!-- Footer-->
     <footer>
       <img src="./assets/icons/logo-principal.png" alt="Logo CoderFilmes" />

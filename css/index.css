@@ -9,36 +9,33 @@
 body {
   background-color: #030f26;
   color: #f2f2f2;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
 }
 
 /* Estilo Cabeçalho */
-.container {
-  min-height: 100vh;
-  width: 100%;
-}
-
-.navbar {
-  width: 100%;
+header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  padding: 20px 30px;
+  width: 100%;
 }
 
-#logo {
-  margin-right: auto;
+header img {
   width: 300px;
+  margin-left: 50px;
+  padding: 20px 0px;
+}
+
+header div {
   padding: 20px;
 }
 
 #select-languages {
-  height: 2rem;
-  width: 6rem;
+  width: 100px;
+  height: 50px;
   background-color: transparent;
   color: #f2f2f2;
+  border-radius: 5px;
 }
 
 #select-languages option {
@@ -47,9 +44,9 @@ body {
 }
 
 #btn-login {
-  height: 2rem;
-  width: 5rem;
-  margin: 10px;
+  width: 100px;
+  height: 50px;
+  margin-left: 10px;
   background-color: #d93250;
   color: #f2f2f2;
   border-radius: 5px;
@@ -62,7 +59,7 @@ body {
   border: 2px solid #f2f2f2;
 }
 
-.story-card {
+main {
   min-width: 950px;
   height: 495px;
   display: flex;
@@ -73,14 +70,14 @@ body {
   padding: 2rem;
 }
 
-.story-card-title {
+h1 {
   font-size: 60px;
   font-weight: bold;
   text-align: center;
   padding: 40px;
 }
 
-.story-card-subtitle {
+h3 {
   font-weight: 400;
   font-size: 24px;
 }
@@ -145,4 +142,32 @@ footer {
 
 footer img {
   width: 10rem;
+}
+
+@media (max-width: 375px) {
+  header img {
+    width: 100px;
+    margin-left: 20px;
+    padding: 20px 0px;
+  }
+
+  header div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 20px;
+  }
+
+  #select-languages {
+    width: 120px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  #btn-login {
+    width: 120px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+  }
 }
