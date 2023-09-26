@@ -3,50 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Barbie, 2023, coderfilmes, filmes, sinopse, onde assistir, streaming">
-    <meta name="description" content="Sinopse resumida do filme">
-    <link rel="shortcut icon" href="../../assets/icons/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="../../css/barbie2023.css">
-    <title>Barbie - 2023</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/barbie2023.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400&display=swap');
+    </style>
 </head>
 <body class="container">
     <header>
-        <!-- Header interno do filme -->
         <nav>
-            <div class="menu">
-                <a href="catalogo.html" class="menu__botao">Catálogo</a>
-                <a href="barbie2023.html" class="menu__botao">Sobre</a>
-                <a href="barbie2023-trailer.html" class="menu__botao">Trailer</a>
-                <a href="barbie2023-galeria.html" class="menu__botao">Galeria</a>
-                <a href="barbie2023-detalhes.html" class="menu__botao">Detalhes</a>
-                <a href="barbie2023-reprodutor.html" class="menu__botao" id="assitir">Assitir</a>
-            </div>
-            <div class="menuMobile">
-                <a href="catalogo.html" id="menuMobile__botao">Catálogo</a>
-                <a href="barbie2023.html" id="menuMobile__botao">Sobre</a>
-                <a href="barbie2023-trailer.html" id="menuMobile__botao">Trailer</a>
-                <a href="barbie2023-galeria.html" id="menuMobile__botao">Galeria</a>
-                <a href="barbie2023-detalhes.html" id="menuMobile__botao">Detalhes</a>
-                <a href="barbie2023-reprodutor.html" id="menuMobile__botao">Assitir</a>
-            </div>
+            <ul>
+                <li>
+                    <input type="checkbox" id="menu--checkbox">
+                    <label for="menu--checkbox" class="botao-menu-mobile">
+                        <img src="../../assets/icons/botao_menu-b.png" alt="Botão Menu">
+                    </label>
+                        <div class="menu-toggle">
+                            <a href="catalogo.html" class="botao-toggle">Catálogo</a>
+                            <a href="barbie2023.html" class="botao-toggle">Sinopse</a>
+                            <a href="barbie2023-trailer.html" class="botao-toggle">Trailer</a>
+                            <a href="barbie2023-detalhes.html" class="botao-toggle">Detalhes</a>
+                        </div>
+                </li>
+                <li><a href="barbie2023-reprodutor.html" class="botao-play-mobile"><img src="../../assets/icons/botao_play-b.png" alt="Botão Reproduzir "></a></li>
+            </ul>
         </nav>
+        <div class="header__desktop">
+            <a href="catalogo.html" class="botao-desktop">Catálogo</a>
+            <a href="barbie2023.html" class="botao-desktop">Sobre</a>
+            <a href="barbie2023-trailer.html" class="botao-desktop">Trailer</a>
+            <a href="barbie2023-galeria.html" class="botao-desktop">Galeria</a>
+            <a href="barbie2023-detalhes.html" class="botao-desktop">Detalhes</a>
+            <a href="barbie2023-reprodutor.html" class="botao-desktop" id="reprodutor">Assitir</a>
+        </div>
     </header>
-    <main >
-        <section>
-            <!-- Sinopse do filme -->
-            <article class="sinopse">
-                <div id="sinopse__geral">
-                    <h3>2023 . 12 anos . 1h 54min</h3>
-                    <h1><strong>BARBIE</strong></h1>
-                </div>
-                <h3><p>Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.</p></h3>
-            </article><br>
-            <!-- Botões para buscar filmes do mesmo gênero -->
-            <article class="sinopse__genero">
-                <a href="" class="menu__botao" id="genero">Aventura</button></a>
-                <a href="" class="menu__botao" id="genero">Comédia</button></a>
-                <a href="" class="menu__botao" id="genero">Fantasia</button></a>
-            </article>
+    <main>
+        <div class="sinopse">
+            <h3 class="info">2023 . 12 anos . 1h 54min</h3>
+            <h1><strong>BARBIE</strong></h1>
+            <h3><p>Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.</p></h3>
+        </div>
+        <div class="genero">
+            <a href="" class="botao-genero">Aventura</a>
+            <a href="" class="botao-genero">Comédia</a>
+            <a href="" class="botao-genero">Fantasia</a>
+        </div>
         </section>
     </main>
 </body>
