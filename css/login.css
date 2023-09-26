@@ -9,36 +9,30 @@
 body {
   background-color: #030f26;
   color: #f2f2f2;
-  width: 100%;
-  height: 100%;
 }
 
 /* Estilo Cabeçalho */
-.container {
-  min-height: 100vh;
-  width: 100%;
-}
-
-.navbar {
-  width: 100%;
+header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  padding: 20px 30px;
-}
-
-#logo {
-  margin-right: auto;
-  width: 300px;
   padding: 20px;
 }
 
+header img {
+  width: 100%;
+  max-width: 300px;
+}
+
 #select-languages {
-  height: 2rem;
-  width: 6rem;
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
   background-color: transparent;
   color: #f2f2f2;
+  border-radius: 6px;
+  padding: 0px 10px;
 }
 
 #select-languages option {
@@ -46,40 +40,35 @@ body {
   color: #030f26;
 }
 
-.story-card {
-  min-width: 950px;
-  height: 495px;
+main {
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
 }
 
-.story-card-title {
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
   font-size: 60px;
-  font-weight: bold;
-  text-align: center;
-  padding: 40px;
 }
 
-.story-card-subtitle {
-  font-weight: 400;
-  font-size: 24px;
+h3 {
+  font-size: 36px;
 }
 
 .form-container {
-  padding: 1rem 0;
+  padding: 20px 50px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   height: 150px;
-}
-
-.form-invitation {
-  font-weight: 400;
-  font-size: 18px;
 }
 
 .form-container-email {
@@ -110,14 +99,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
 }
 
 .btn {
-  width: 150px;
-  height: 50px;
+  width: 160px;
+  height: 40px;
   border-style: none;
   border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
   background-color: #d93250;
   color: #f2f2f2;
   font-size: 16px;
@@ -127,18 +117,102 @@ body {
 .btn:hover {
   cursor: pointer;
   background-color: #732743;
-  border: 2px solid #f2f2f2;
+  border: 1px solid #f2f2f2;
 }
 
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   padding: 20px;
-  gap: 1rem;
+  gap: 20px;
 }
 
 footer img {
-  width: 10rem;
+  width: 200px;
+}
+
+/* Tela para Smartphone - Tablet */
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  header img {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  #select-languages {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  main {
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 600;
+    padding: 20px;
+  }
+
+  h3 {
+    flex-wrap: wrap;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 0px;
+  }
+
+  form {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  h4 {
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  #input-email,
+  #input-password {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 6px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .btn {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  footer img {
+    width: 150px;
+  }
 }
