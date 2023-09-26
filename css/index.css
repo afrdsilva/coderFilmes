@@ -9,7 +9,7 @@
 body {
   background-color: #030f26;
   color: #f2f2f2;
-  width: 100vw;
+  max-width: 100%;
 }
 
 /* Estilo Cabeçalho */
@@ -17,25 +17,23 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-}
-
-header img {
-  width: 300px;
-  margin-left: 50px;
-  padding: 20px 0px;
-}
-
-header div {
   padding: 20px;
 }
 
+header img {
+  width: 100%;
+  max-width: 300px;
+}
+
 #select-languages {
-  width: 100px;
+  width: 150px;
   height: 50px;
+  font-size: 16px;
+  font-weight: bold;
   background-color: transparent;
   color: #f2f2f2;
-  border-radius: 5px;
+  border-radius: 6px;
+  padding: 0px 5px;
 }
 
 #select-languages option {
@@ -44,67 +42,58 @@ header div {
 }
 
 #btn-login {
-  width: 100px;
+  width: 150px;
   height: 50px;
-  margin-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
   background-color: #d93250;
+  border: 1px solid #030f26;
   color: #f2f2f2;
-  border-radius: 5px;
+  border-radius: 6px;
   transition: 0.5s;
 }
 
 #btn-login:hover {
   cursor: pointer;
   background-color: #732743;
-  border: 2px solid #f2f2f2;
+  border: 1px solid #f2f2f2;
 }
 
 main {
-  min-width: 950px;
-  height: 495px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
+  text-align: center;
+  margin: 40px;
+  padding: 40px;
 }
 
 h1 {
   font-size: 60px;
   font-weight: bold;
-  text-align: center;
   padding: 40px;
 }
 
 h3 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 24px;
+  padding: 20px;
 }
 
-.form-container {
+form {
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 150px;
 }
 
-.form-invitation {
+h4 {
   font-weight: 400;
   font-size: 18px;
 }
 
-.form-container-email {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #input-email {
-  width: 450px;
+  width: 60%;
   font-size: 20px;
-  padding: 0.5rem 1rem;
+  padding: 10px 20px;
+  border-radius: 6px;
 }
 
 .buttons {
@@ -117,18 +106,19 @@ h3 {
 .btn {
   width: 150px;
   height: 50px;
+  font-size: 16px;
+  font-weight: bold;
   border-style: none;
   border-radius: 6px;
   background-color: #d93250;
   color: #f2f2f2;
-  font-size: 16px;
   transition: 0.5s;
 }
 
 .btn:hover {
   cursor: pointer;
   background-color: #732743;
-  border: 2px solid #f2f2f2;
+  border: 1px solid #f2f2f2;
 }
 
 footer {
@@ -136,38 +126,94 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 1rem;
-  gap: 1rem;
+  gap: 20px;
 }
 
 footer img {
-  width: 10rem;
+  width: 150px;
 }
 
-@media (max-width: 375px) {
-  header img {
-    width: 100px;
-    margin-left: 20px;
-    padding: 20px 0px;
-  }
-
-  header div {
+/* TELA PARA CELULAR */
+@media (max-width: 768px) {
+  header {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
-    padding: 0px 20px;
+    padding: 10px;
   }
 
-  #select-languages {
-    width: 120px;
-    height: 50px;
-    font-size: 16px;
+  header img {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  #select-languages,
+  #btn-login {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  main {
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 46px;
+    font-weight: 600;
+    padding: 20px;
+  }
+
+  h3 {
+    flex-wrap: wrap;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 0px;
+  }
+
+  form {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  h4 {
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  #input-email {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 6px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .btn {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
     font-weight: bold;
   }
-  #btn-login {
-    width: 120px;
-    height: 50px;
-    font-size: 16px;
-    font-weight: bold;
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  footer img {
+    width: 150px;
   }
 }
