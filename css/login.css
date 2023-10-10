@@ -46,6 +46,7 @@ main {
   gap: 20px;
   justify-content: center;
   align-items: center;
+  padding: 200px;
 }
 
 form {
@@ -78,7 +79,7 @@ h3 {
 }
 
 #input-email {
-  width: 450px;
+  width: 100%;
   font-size: 20px;
   padding: 0.5rem 1rem;
 }
@@ -90,7 +91,7 @@ h3 {
 }
 
 #input-password {
-  width: 450px;
+  width: 100%;
   font-size: 20px;
   padding: 0.5rem 1rem;
 }
@@ -214,5 +215,12 @@ footer img {
 
   footer img {
     width: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  #input-email,
+  #input-password {
+    width: 100%;
   }
 }
