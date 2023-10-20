@@ -43,27 +43,33 @@ function exibirFilme0(filme) {
     titulo.classList.add("tituloFilme");
     let sinop = document.createElement("li")
     let ano = document.createElement("li")
+    let LinkFilme = document.createElement("a")
     let banner  = document.createElement("img")
-    let linha = document.createElement("br")
+    let assista = document.createElement("button")
+    assista.classList.add("btn_Assistir")
+    let linha = document.createElement("hr")
     linha.classList.add("linha");
     
-    id.innerText = filme.id
-    titulo.innerText = filme.title
-    sinop.innerText = filme.overview
-    ano.innerText= filme.release_date
     
-   
+    titulo.innerText ="Titulo: "+ filme.title
+    id.innerText = "Id: "+filme.id
+    sinop.innerText = "Sinop: "+filme.overview
+    ano.innerText= "Data de Lançamento: "+filme.release_date
+    LinkFilme.href ='https://embedder.net/e/'+filme.id
+    LinkFilme.innerText = "assista"
 
     banner.src = 'https://image.tmdb.org/t/p/w185'+filme.poster_path  
 
-    infoFilmes.appendChild(id)
     infoFilmes.appendChild(titulo)
+    infoFilmes.appendChild(id)
     infoFilmes.appendChild(sinop)
     infoFilmes.appendChild(ano)
     infoFilmes.appendChild(banner)
     infoFilmes.appendChild(linha)
-    
+    infoFilmes.appendChild(LinkFilme)
     informacoes.append(infoFilmes)
+    informacoes.appendChild(assista)
+    assista.appendChild(LinkFilme)
   
 }
 
