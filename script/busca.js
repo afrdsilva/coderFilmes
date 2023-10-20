@@ -34,24 +34,23 @@ buscarFilme.onclick  = () => {
 // }
 
 function exibirFilme0(filme) {
-
+    let id = document.getElementById("id");
     let titulo = document.getElementById("titulo");
     let ano = document.getElementById("ano");
-    let duracao = document.getElementById("duracao");
-    let classificacaoIndicativa = document.getElementById("classificacaoIndicativa");
-    
-    
-    titulo.innerText = filme.title
-    ano.innerText = filme.release_date
-    duracao.innerText = filme.overview
+    let sinop = document.getElementById("overview");
+    let banner = document.getElementById("poster");
 
-    let divImg = document.getElementById("poster");
-    // divImg.innerText = "";
     
-    let poster = document.createElement("p")
-    poster.innerText = filme.title
-    
-    divImg.append(poster)
+    id.innerText = filme.id
+    titulo.innerText = filme.title
+    ano.innerText= filme.release_date
+    sinop.innerText = filme.overview
+   
+    let posterImg = document.createElement("img")
+    posterImg.src = 'https://image.tmdb.org/t/p/w500'+filme.poster_path  
+    banner.append(posterImg)
+
+  
 }
 
 function exibirFilmes(response) {
