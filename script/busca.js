@@ -34,22 +34,36 @@ buscarFilme.onclick  = () => {
 // }
 
 function exibirFilme0(filme) {
-    let id = document.getElementById("id");
-    let titulo = document.getElementById("titulo");
-    let ano = document.getElementById("ano");
-    let sinop = document.getElementById("overview");
-    let banner = document.getElementById("poster");
 
+    let informacoes= document.getElementById("todosFilmes");
+    
+    let infoFilmes = document.createElement("ul")
+    let id = document.createElement("li")
+    let titulo = document.createElement("li")
+    titulo.classList.add("tituloFilme");
+    let sinop = document.createElement("li")
+    let ano = document.createElement("li")
+    let banner  = document.createElement("img")
+    let linha = document.createElement("br")
+    linha.classList.add("linha");
     
     id.innerText = filme.id
     titulo.innerText = filme.title
-    ano.innerText= filme.release_date
     sinop.innerText = filme.overview
+    ano.innerText= filme.release_date
+    
    
-    let posterImg = document.createElement("img")
-    posterImg.src = 'https://image.tmdb.org/t/p/w500'+filme.poster_path  
-    banner.append(posterImg)
 
+    banner.src = 'https://image.tmdb.org/t/p/w185'+filme.poster_path  
+
+    infoFilmes.appendChild(id)
+    infoFilmes.appendChild(titulo)
+    infoFilmes.appendChild(sinop)
+    infoFilmes.appendChild(ano)
+    infoFilmes.appendChild(banner)
+    infoFilmes.appendChild(linha)
+    
+    informacoes.append(infoFilmes)
   
 }
 

@@ -15,3 +15,12 @@ nav{
 #informacoes {
     color: white;
 }
+
+#todosFilmes{
+    color: white;
+    
+}
+.tituloFilme{
+    color: orange;
+    font-size: 50px;;
+}
