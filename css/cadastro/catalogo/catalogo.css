@@ -1,0 +1,19 @@
+.tituloFilme {
+  padding-top: 60px;
+}
+
+.poster {
+  padding-top: 20px;
+}
+
+.assistir {
+  background: linear-gradient(#d90d1e, #d93250);
+  ;
+  padding: 20px 60px;
+  border: 2px solid var(--cor-12);
+  border-radius: 4px;
+}
+
+.assistir:hover {
+  background: linear-gradient(#bf0426, #8C031C);
+}
