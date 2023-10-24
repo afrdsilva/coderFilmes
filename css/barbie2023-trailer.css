@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(../img/filmes-fundos/capa_barbie2023_trailers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: 
+    "header header"
+    "trailer1 trailer2"
+    "footer footer";
+}
+
+#menuCheckbox {
+    display: none;
+}
+
+.botaoMenuMobile {
+    display: none;
+}
+
+.menuToggle {
+    display: none;
+}
+
+.botaoPlayMobile {
+    display: none;
+}
+
+a:visited {
+    color:white
+}
+
+.headerDesktop {
+    margin-top: 30px;
+    margin-left: 120px;
+    white-space: nowrap;
+}
+
+.botaoDesktop {
+    display: inline;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 46px;
+    color: white;
+    font-family: 'Hind';
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+#reprodutor {
+    position: fixed;
+    right: 120px;
+    padding: 10px 120px 10px 120px;
+    white-space: nowrap;
+}
+
+.botaoDesktop:hover {
+    background-color: #80557b;
+}
+  
+#reprodutor:hover {
+    background-color: #80557b;
+}
+
+header {
+    grid-area: header;
+}
+
+.trailer {
+    grid-area: trailer;
+}
+
+iframe {
+    border-color: transparent;
+    width: 435px;
+    height: 244px;
+}
+
+#embedTrailer1 {
+    grid-area: trailer1;
+    align-items: center;
+}
+
+#embedTrailer2 {
+    grid-area: trailer2;
+    align-items: center;
+    /* position: fixed;
+    bottom: 222.5pxx;
+    right: 60px; */
+}
+
+footer {
+    grid-area: footer;
+}
